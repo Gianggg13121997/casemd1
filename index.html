@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bán chó mèo</title>
+</head>
+<style>
+    header {
+        background: green;
+        color: #b2e735;
+        padding-top: 30px;
+        min-height: 70px;
+        border-bottom: #f4f4f4 3px solid;
+    }
+
+    input {
+        width: 200px;
+    }
+
+    table {
+        background-color:darkkhaki ;
+        text-align: center;
+    }
+
+    body {
+        background-color: bisque;
+
+    }
+
+    h2 {
+        color: deepskyblue;
+    }
+
+    h1 {
+        text-align: center;
+        color: gray
+        border: 2px;
+    }
+
+    table button {
+        height: 180px;
+        background-color: chartreuse;
+    }
+
+    button {
+        background-color: chartreuse;
+        width: 50px;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Thú cưng của bạn</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://www.facebook.com/TruongGiang181/">Trang chủ</a></li>
+                    <li><a href="">Sản phẩm</a></li>
+                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="https://www.facebook.com/TruongGiang181/">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <br>
+    <br>
+    <h2> THAO TÁC :</h2>
+    <input type="text" placeholder="ID" id="id">
+    <br>
+    <br>
+    <input type="text" placeholder="Name" id="name">
+    <br>
+    <br>
+    <input type="text" placeholder="Price" id="price">
+    <br>
+    <br>
+    <input type="text" placeholder="Image" id="img">
+    <br>
+    <br>
+    <div id="btn-save">
+        <button onclick="add()">ADD</button>
+    </div>
+    <img src="" alt="" id="edit-img">
+    <h2>DANH SÁCH THÚ CƯNG :</h2>
+    <br>
+    <table border="1" id="table">
+
+    </table>
+
+    <h3> Tìm kiếm thú cưng :</h3>
+    <p>Nhập tên loại thú cưng bạn cần tìm :</p>
+    <form action="https://www.google.com/search?" method="get">
+        <input type="text" name="q" placeholder="Nhập tên thú cưng">
+        <button>Tìm kiếm</button>
+    </form>
+
+    
+    <script src="Store.js"></script>
+    <script src="Product.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
