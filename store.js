@@ -19,4 +19,10 @@ class Store{
     update(index,newProduct) {
         this.listProduct[index] = newProduct
     }
-}   
+    searchProduct(keyword) {
+        keyword = keyword.toLowerCase().trim();
+        return this.listProduct.filter(product => {
+            return product.name.toLowerCase().includes(keyword);
+        });
+    }
+}  

@@ -4,66 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bán chó mèo</title>
+    <title>Thế Giới PET</title>
+    <link rel="stylesheet" href="demo.css">
 </head>
-<style>
-    header {
-        background: green;
-        color: #b2e735;
-        padding-top: 30px;
-        min-height: 70px;
-        border-bottom: #f4f4f4 3px solid;
-    }
-
-    input {
-        width: 200px;
-    }
-
-    table {
-        background-color:darkkhaki ;
-        text-align: center;
-    }
-
-    body {
-        background-color: bisque;
-
-    }
-
-    h2 {
-        color: deepskyblue;
-    }
-
-    h1 {
-        text-align: center;
-        color: gray
-        border: 2px;
-    }
-
-    table button {
-        height: 180px;
-        background-color: chartreuse;
-    }
-
-    button {
-        background-color: chartreuse;
-        width: 50px;
-    }
-</style>
+<link rel="style" href="demo.css">
 
 <body>
     <header>
-        <div class="container">
-            <h1>Thú cưng của bạn</h1>
+        <h1>PET HOUSE</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9MftIueGW3b2WTk6LJmTqcKSlJtw6AXkpw&s" alt="" style="border-radius: 50%; overflow: hidden;">
+        <nav style="float: right;">
             <nav>
                 <ul>
-                    <li><a href="https://www.facebook.com/TruongGiang181/">Trang chủ</a></li>
-                    <li><a href="">Sản phẩm</a></li>
-                    <li><a href="#">Dịch vụ</a></li>
-                    <li><a href="https://www.facebook.com/TruongGiang181/">Liên hệ</a></li>
+                    <li><a href="https://www.facebook.com/mubanchouytin" style="color: red;">Trang chủ</a></li>
+                    <li><a href="https://azpet.com.vn/" style="color: red;">Sản phẩm</a></li>
+                    <li><a href="https://asiesta.net/shibuyahanare/en/?gad_source=1&gclid=CjwKCAjw1emzBhB8EiwAHwZZxXzZoyJOCp-nwFZbVLnN6Gmnc5jydeMbsA6DHPM6AoRyNuvLFAaSFxoCzSMQAvD_BwE" style="color: red;">Dịch vụ</a></li>
+                    <li><a href="https://www.facebook.com/TruongGiang181/" style="color: red;">Liên hệ</a></li>
                 </ul>
             </nav>
-        </div>
+        </nav>
+        <section id="searchSection">
+            <h2>TÌM KIẾM THEO TÊN :</h2>
+            <input type="text" id="searchInput" placeholder="Nhập tên loại thú cưng">
+            <button onclick="searchProduct()">Tìm kiếm</button>
+        </section>
     </header>
+
+
 
     <br>
     <br>
@@ -84,20 +51,17 @@
         <button onclick="add()">ADD</button>
     </div>
     <img src="" alt="" id="edit-img">
-    <h2>DANH SÁCH THÚ CƯNG :</h2>
+    <h2>QUẢN LÍ DANH SÁCH :</h2>
     <br>
-    <table border="1" id="table">
+    <div class="table-container" class="center">
+        <table border="1" id="table">
 
-    </table>
+        </table>
+    </div>
 
-    <h3> Tìm kiếm thú cưng :</h3>
-    <p>Nhập tên loại thú cưng bạn cần tìm :</p>
-    <form action="https://www.google.com/search?" method="get">
-        <input type="text" name="q" placeholder="Nhập tên thú cưng">
-        <button>Tìm kiếm</button>
-    </form>
-
-    
+    <footer>
+        <p>Liên hệ : 1900100có</p>
+    </footer>
     <script src="Store.js"></script>
     <script src="Product.js"></script>
     <script src="main.js"></script>
